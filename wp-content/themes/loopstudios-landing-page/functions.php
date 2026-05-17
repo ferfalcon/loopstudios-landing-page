@@ -18,9 +18,16 @@ function loopstudios_landing_page_styles() {
 	$theme_version = wp_get_theme()->get( 'Version' );
 
 	wp_enqueue_style(
+		'loopstudios-google-fonts',
+		'https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap',
+		array(),
+		null
+	);
+
+	wp_enqueue_style(
 		'loopstudios-landing-page',
 		get_template_directory_uri() . '/assets/css/main.css',
-		array(),
+		array( 'loopstudios-google-fonts' ),
 		$theme_version
 	);
 }

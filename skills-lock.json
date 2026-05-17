@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "skills": {
+    "bem-structure": {
+      "source": "RoleModel/rolemodel-skills",
+      "sourceType": "github",
+      "skillPath": "skills/bem-structure/SKILL.md",
+      "computedHash": "eefda5a5e6787c68e5383d9246f7dca8a9920f79529a84c59cd1a726bb7247ad"
+    },
+    "wp-block-development": {
+      "source": "automattic/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/wp-block-development/SKILL.md",
+      "computedHash": "663b1974050e443c3888e714a7204768a45459d07ad0d8102a2f2eca56bb8f9d"
+    },
+    "wp-block-themes": {
+      "source": "automattic/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/wp-block-themes/SKILL.md",
+      "computedHash": "ec31dc2e2a224299225fed1be6f6a94085b3fbfdcf57f22d673949063abf24bc"
+    },
+    "wp-plugin-development": {
+      "source": "automattic/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/wp-plugin-development/SKILL.md",
+      "computedHash": "3c13a9d2e6e346c9f933918fdf4d191cdba9f2cfe24f87cbcd763d090bbd8014"
+    }
+  }
+}

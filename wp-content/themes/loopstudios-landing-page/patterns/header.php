@@ -15,7 +15,7 @@
 		<figure class="wp-block-image size-full is-resized site-header__logo"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/logo.svg' ); ?>" alt="loopstudios logo" width="192" height="32"/></figure>
 		<!-- /wp:image -->
 
-		<!-- wp:navigation {"className":"site-header__nav","layout":{"type":"flex","setCascadingMenu":true,"justifyContent":"right","orientation":"horizontal"}} -->
+		<!-- wp:navigation {"overlayMenu":"mobile","overlayBackgroundColor":"black","overlayTextColor":"white","className":"site-header__nav","layout":{"type":"flex","setCascadingMenu":true,"justifyContent":"right","orientation":"horizontal"}} -->
 			<!-- wp:navigation-link {"label":"About","url":"#","kind":"custom","isTopLevelLink":true} /-->
 			<!-- wp:navigation-link {"label":"Careers","url":"#","kind":"custom","isTopLevelLink":true} /-->
 			<!-- wp:navigation-link {"label":"Events","url":"#","kind":"custom","isTopLevelLink":true} /-->

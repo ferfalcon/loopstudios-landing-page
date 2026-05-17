@@ -5,7 +5,7 @@
  * Description:       Companion plugin for the Loopstudios Landing Page block theme. Registers custom blocks and functionality.
  * Version:           1.0
  * Requires at least: 6.7
- * Requires PHP:      7.2
+ * Requires PHP:      7.4
  * Author:            Fernando Falcon
  * Author URI:        https://www.ferfalcon.com/
  * License:           GPL v2 or later

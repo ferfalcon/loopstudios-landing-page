@@ -8,6 +8,12 @@
 	"icon": "grid-view",
 	"description": "Displays the Loopstudios creations grid with image cards.",
 	"keywords": ["loopstudios", "creations", "grid", "gallery"],
+	"attributes": {
+		"items": {
+			"type": "array",
+			"default": []
+		}
+	},
 	"textdomain": "loopstudios-landing-page",
 	"editorScript": "file:./index.js",
 	"render": "file:./render.php"

@@ -6,9 +6,17 @@
 if ( ! function_exists( 'loopstudios_landing_page_setup' ) ) :
 	function loopstudios_landing_page_setup() {
 		add_editor_style( 'assets/css/editor-style.css' );
+		add_theme_support( 'automatic-feed-links' );
+		add_theme_support( 'title-tag' );
 	}
 endif;
 add_action( 'after_setup_theme', 'loopstudios_landing_page_setup' );
+
+function loopstudios_landing_page_favicon() {
+	$favicon_url = get_template_directory_uri() . '/assets/images/favicon-32x32.png';
+	echo '<link rel="icon" type="image/png" sizes="32x32" href="' . esc_url( $favicon_url ) . '" />';
+}
+add_action( 'wp_head', 'loopstudios_landing_page_favicon' );
 
 function loopstudios_landing_page_styles() {
 	if ( is_admin() ) {

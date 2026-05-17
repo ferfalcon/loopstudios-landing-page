@@ -1,1 +1,29 @@
-/* Loopstudios Landing Page - Editor Styles */
+:root {
+	--color-white: #ffffff;
+	--color-black: #000000;
+	--color-grey-200: #d9d9d9;
+	--color-grey-400: #808080;
+	--font-alata: "Alata", sans-serif;
+	--font-josefin: "Josefin Sans", sans-serif;
+}
+
+body {
+	font-family: var(--font-alata);
+	font-size: 0.9375rem;
+	color: var(--color-black);
+	line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-josefin);
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 2rem;
+}

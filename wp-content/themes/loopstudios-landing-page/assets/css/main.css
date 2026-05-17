@@ -371,6 +371,22 @@ ul {
 	font-size: 0.9375rem;
 }
 
+.site-footer__nav .wp-block-navigation__responsive-container-open,
+.site-footer__nav .wp-block-navigation__responsive-container-close {
+	display: none !important;
+}
+
+.site-footer__nav .wp-block-navigation__responsive-container {
+	position: static !important;
+	display: flex !important;
+	background: transparent;
+}
+
+.site-footer__nav .wp-block-navigation__container {
+	display: flex !important;
+	flex-wrap: wrap;
+}
+
 .site-footer__nav .wp-block-navigation-item__content {
 	color: var(--color-white);
 	padding: 0.5rem 0;

@@ -1,0 +1,21 @@
+{
+	"title": "Dark",
+	"slug": "dark",
+	"styles": {
+		"color": {
+			"background": "#000000",
+			"text": "#ffffff"
+		},
+		"blocks": {
+			"core/button": {
+				"color": {
+					"background": "transparent",
+					"text": "#ffffff"
+				},
+				"border": {
+					"color": "#ffffff"
+				}
+			}
+		}
+	}
+}

@@ -25,15 +25,53 @@
 				}
 			]
 		},
+		"dimensions": {
+			"aspectRatio": true,
+			"minHeight": true
+		},
 		"layout": {
 			"contentSize": "1110px",
 			"wideSize": "1440px"
 		},
 		"spacing": {
+			"defaultSpacingSizes": false,
+			"spacingSizes": [
+				{
+					"name": "X-Small",
+					"size": "0.5rem",
+					"slug": "10"
+				},
+				{
+					"name": "Small",
+					"size": "1rem",
+					"slug": "20"
+				},
+				{
+					"name": "Medium",
+					"size": "1.5rem",
+					"slug": "30"
+				},
+				{
+					"name": "Large",
+					"size": "2.5rem",
+					"slug": "40"
+				},
+				{
+					"name": "X-Large",
+					"size": "4rem",
+					"slug": "50"
+				},
+				{
+					"name": "XX-Large",
+					"size": "6rem",
+					"slug": "60"
+				}
+			],
 			"units": ["px", "em", "rem", "%", "vh", "vw"]
 		},
 		"typography": {
 			"defaultFontSizes": false,
+			"fluid": true,
 			"fontFamilies": [
 				{
 					"fontFamily": "Alata, sans-serif",
@@ -78,7 +116,8 @@
 			"letterSpacing": true,
 			"lineHeight": true,
 			"textDecoration": true,
-			"textTransform": true
+			"textTransform": true,
+			"writingMode": true
 		},
 		"blocks": {
 			"core/button": {

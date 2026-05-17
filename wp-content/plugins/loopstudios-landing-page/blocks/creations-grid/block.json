@@ -1,0 +1,14 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.7/block.json",
+	"apiVersion": 3,
+	"name": "loopstudios/creations-grid",
+	"version": "1.0",
+	"title": "Creations Grid",
+	"category": "design",
+	"icon": "grid-view",
+	"description": "Displays the Loopstudios creations grid with image cards.",
+	"keywords": ["loopstudios", "creations", "grid", "gallery"],
+	"textdomain": "loopstudios-landing-page",
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

@@ -741,15 +741,24 @@ body:not(.home) .site-header {
 
 	.creations__grid {
 		grid-template-columns: repeat(4, 1fr);
+		gap: 1.875rem;
+	}
+
+	.creations__title {
+		font-size: 3rem;
 	}
 
 	.creations__item {
 		aspect-ratio: auto;
 	}
 
+	.creations__image {
+		aspect-ratio: 256 / 450;
+	}
+
 	.creations__label {
 		bottom: 2rem;
-		left: 2rem;
+		left: 2.5rem;
 		font-size: 2rem;
 		max-width: 170px;
 	}

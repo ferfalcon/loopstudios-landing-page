@@ -27,9 +27,6 @@ $images_uri = get_template_directory_uri() . '/assets/images';
 		<h2 class="wp-block-heading creations__title"><?php esc_html_e( 'Our creations', 'loopstudios-landing-page' ); ?></h2>
 		<!-- /wp:heading -->
 
-		<!-- wp:paragraph {"className":"creations__see-all-wrapper"} -->
-		<p class="creations__see-all-wrapper"><a class="creations__see-all" href="#"><?php esc_html_e( 'See all', 'loopstudios-landing-page' ); ?></a></p>
-		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:group -->
 
@@ -46,5 +43,9 @@ $images_uri = get_template_directory_uri() . '/assets/images';
 			</li>
 		<?php endforeach; ?>
 	</ul>
+
+	<!-- wp:paragraph {"className":"creations__see-all-wrapper"} -->
+	<p class="creations__see-all-wrapper"><a class="creations__see-all" href="#"><?php esc_html_e( 'See all', 'loopstudios-landing-page' ); ?></a></p>
+	<!-- /wp:paragraph -->
 </section>
 <!-- /wp:group -->

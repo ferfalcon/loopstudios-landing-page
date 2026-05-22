@@ -149,6 +149,11 @@ body:not(.home) .site-header {
 	position: relative;
 }
 
+.site-header .wp-block-navigation-item__content,
+.site-header .wp-block-navigation-item__label {
+	color: var(--color-white) !important;
+}
+
 .site-header__nav .wp-block-navigation-item__content::after {
 	content: "";
 	position: absolute;
@@ -171,29 +176,45 @@ body:not(.home) .site-header {
    ============================================ */
 
 .hero {
-	min-height: 100vh;
+	min-height: 650px !important;
 	display: flex;
 	align-items: center;
+	padding: 0;
+	background-image: url("../images/mobile/image-hero.jpg");
+	background-position: center top;
+	background-size: cover;
 }
 
-.hero .wp-block-cover__inner-container {
+.hero::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.35);
+}
+
+.hero {
+	display: flex;
+	justify-content: flex-start;
+	position: relative;
 	padding-left: var(--spacing-mobile);
 	padding-right: var(--spacing-mobile);
-	max-width: 1110px;
-	margin: 0 auto;
-	width: 100%;
 }
 
 .hero__title {
+	position: relative;
+	z-index: 2;
 	font-family: var(--font-josefin);
 	font-weight: 300;
 	text-transform: uppercase;
 	color: var(--color-white);
 	font-size: 2.5rem;
 	line-height: 1;
-	margin: 0;
+	margin: 0 !important;
 	border: 2px solid var(--color-white);
 	padding: 1.5rem 1.5rem;
+	text-align: left;
+	width: min(100%, 650px);
 	max-width: 650px;
 	word-break: break-word;
 }
@@ -244,6 +265,7 @@ body:not(.home) .site-header {
 	gap: 1.5rem;
 	margin-bottom: 3rem;
 	padding: 0 var(--spacing-mobile);
+	width: 100%;
 }
 
 .creations__title {
@@ -270,7 +292,8 @@ body:not(.home) .site-header {
 }
 
 .creations__see-all-wrapper {
-	margin: 0;
+	margin: 2.125rem 0 0;
+	text-align: center;
 }
 
 .creations__see-all:hover,
@@ -464,11 +487,7 @@ body:not(.home) .site-header {
 }
 
 .site-footer__attribution {
-	font-size: 0.75rem;
-	color: var(--color-grey-400);
-	margin: 2.5rem auto 0;
-	text-align: center;
-	max-width: 1110px;
+	display: none;
 }
 
 .site-footer__attribution a {
@@ -556,7 +575,7 @@ body:not(.home) .site-header {
 		display: flex !important;
 	}
 
-	.hero .wp-block-cover__inner-container {
+	.hero {
 		padding-left: var(--spacing-tablet);
 		padding-right: var(--spacing-tablet);
 	}
@@ -598,6 +617,20 @@ body:not(.home) .site-header {
 		justify-content: space-between;
 		padding: 0;
 		margin-bottom: 5rem;
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	.creations {
+		display: grid;
+		grid-template-columns: 1fr auto;
+		align-items: center;
+	}
+
+	.creations__see-all-wrapper {
+		grid-column: 2;
+		grid-row: 1;
+		margin: 0 0 5rem;
 	}
 
 	.creations__title {
@@ -605,6 +638,7 @@ body:not(.home) .site-header {
 	}
 
 	.creations__grid {
+		grid-column: 1 / -1;
 		grid-template-columns: repeat(2, 1fr);
 		padding: 0;
 	}
@@ -642,9 +676,13 @@ body:not(.home) .site-header {
 		padding-right: var(--spacing-desktop);
 	}
 
-	.hero .wp-block-cover__inner-container {
-		padding-left: var(--spacing-desktop);
-		padding-right: var(--spacing-desktop);
+	.hero {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.hero {
+		background-image: url("../images/desktop/image-hero.jpg");
 	}
 
 	.site-main--content {
@@ -658,7 +696,7 @@ body:not(.home) .site-header {
 	}
 
 	.interactive-vr {
-		padding: 10rem var(--spacing-desktop) 6rem;
+		padding: 10rem 0 6rem;
 	}
 
 	.interactive-vr__content .wp-block-media-text__content {
@@ -666,7 +704,16 @@ body:not(.home) .site-header {
 	}
 
 	.interactive-vr__content {
+		display: block;
 		position: relative;
+	}
+
+	.interactive-vr__content .wp-block-media-text__media {
+		width: 65.855855%;
+	}
+
+	.interactive-vr__content .wp-block-media-text__media img {
+		width: 100%;
 	}
 
 	.interactive-vr__content .wp-block-media-text__content {
@@ -674,7 +721,7 @@ body:not(.home) .site-header {
 		right: 0;
 		bottom: 0;
 		background: var(--color-white);
-		padding: 6rem 0 0 6rem;
+		padding: 4rem 0 6rem 6rem;
 		max-width: 540px;
 	}
 
@@ -719,7 +766,7 @@ body:not(.home) .site-header {
 
 @media (min-width: 90rem) {
 	.interactive-vr__content .wp-block-media-text__content {
-		padding: 6rem 0 0 6rem;
+		padding: 4rem 0 6rem 6rem;
 		right: 0;
 	}
 }
@@ -729,6 +776,14 @@ body:not(.home) .site-header {
    ============================================ */
 
 @media (max-width: 47.99875rem) {
+	.hero {
+		align-items: flex-start;
+	}
+
+	.hero {
+		padding-top: 8.875rem;
+	}
+
 	.wp-block-navigation__responsive-container-open {
 		display: flex;
 		align-items: center;

@@ -53,6 +53,11 @@ img {
    Site Header
    ============================================ */
 
+.wp-site-blocks > .wp-block-template-part:first-of-type,
+.wp-block-template-part-header {
+	margin-block-start: 0 !important;
+}
+
 .site-header {
 	position: absolute;
 	top: 0;
@@ -69,6 +74,10 @@ body:not(.home) .site-header {
 	position: static;
 	padding-bottom: 2rem;
 	background: var(--color-black);
+}
+
+.site-main {
+	margin-block-start: 0 !important;
 }
 
 .site-main--content {

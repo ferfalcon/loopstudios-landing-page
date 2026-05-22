@@ -7,8 +7,8 @@
  * Description: Site footer with logo, navigation, social links, and copyright.
  */
 ?>
-<!-- wp:group {"tagName":"footer","className":"site-footer","layout":{"type":"constrained"}} -->
-<footer class="wp-block-group site-footer">
+<!-- wp:group {"className":"site-footer","layout":{"type":"constrained"}} -->
+<div class="wp-block-group site-footer">
 	<!-- wp:group {"className":"site-footer__inner","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","alignItems":"center"}} -->
 	<div class="wp-block-group site-footer__inner">
 		<!-- wp:group {"className":"site-footer__nav-group","layout":{"type":"flex","flexDirection":"column","alignItems":"flex-start"}} -->
@@ -52,5 +52,5 @@
 		Coded by <a href="https://www.ferfalcon.com/">Fernando Falcon</a>.
 	</p>
 	<!-- /wp:paragraph -->
-</footer>
+</div>
 <!-- /wp:group -->

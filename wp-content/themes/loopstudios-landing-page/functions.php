@@ -46,7 +46,7 @@ function loopstudios_landing_page_styles() {
 		'loopstudios-landing-page',
 		get_template_directory_uri() . '/assets/css/main.css',
 		array( 'loopstudios-google-fonts' ),
-		$theme_version
+		filemtime( get_template_directory() . '/assets/css/main.css' )
 	);
 }
 add_action( 'wp_enqueue_scripts', 'loopstudios_landing_page_styles' );
